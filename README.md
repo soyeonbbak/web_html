@@ -14,3 +14,11 @@ header , nav , span , section , aside , article , footer
 figure , details , main , mark , time, dl-dt-dd , ul or ol-li
 div
 ```
+# 23/06/23 ~
+**
+```
+<a href="url ot ./ 사용하여 같은 폴더 안에 파일 불러오기"></a>
+<img src="./와../를 이용하여 폴더 내 이미지사진 불러오기>
+html:5
+meta:kw / meta:desc
+```
