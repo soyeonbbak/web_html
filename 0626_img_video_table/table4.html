@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, table * {border:2px solid black;}
+    </style>
+</head>
+<body>
+    <h1>2행2열</h1>
+    <table>
+        <tr>
+            <th colspan="2">제목1</th>
+<!--             <th>제목2</th> -->
+        </tr>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+        </tr>
+    </table>
+    <h1>2행 3열</h1>
+    <table>
+        <tr>
+            <th colspan="3">제목1</th>
+            <!-- <th>제목2</th> -->
+            <!-- <th>제목3</th> -->
+        </tr>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+        </tr>
+    </table>
+    <h1>2행2열</h1>
+    <table>
+        <tr>
+            <th>1</th>
+            <th rowspan="2">2</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <!-- <td>4</td> -->
+        </tr>
+    </table>
+    <h1>3행 2열</h1>
+    <table>
+        <tr>
+            <th>1</th>
+            <th rowspan="2">2</th>
+        </tr>
+        <tr>
+            <td >3</td>
+            <!-- <td>4</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <!-- <td>6</td> -->
+        </tr>
+    </table>
+</body>
+</html>

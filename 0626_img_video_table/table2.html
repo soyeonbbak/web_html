@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블연습2</title>
+    <style>
+        table, table * {border:2px solid black;}
+    </style>
+</head>
+<body>
+    <h1>행 그룹, thead, tbody, tfoot</h1>
+    <table><!-- 테이블 전체 틀 -->
+        <thead><!--제목 행 그룹 -->
+            <tr><!-- 1행 -->
+                <th>제목1:1</th><!-- 제목 열 -->
+            </tr>
+        </thead>
+            <tbody><!-- 내용 행 그룹 -->
+            <tr><!-- 2행 -->
+                <td>내용2:1</td><!-- 내용 -->
+            </tr>
+            <tr><!-- 3행 -->
+                <td>내용3:1</td>
+            </tr>
+        </tbody>
+        <tfoot><!-- 결과 행 그룹 -->
+        </tfoot>
+    </table>
+    <hr>
+    <h1>행 그룹 활용</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>제목</th>
+            </tr>
+        </thead>
+        <!-- thead -> tfoot -> tbody -->
+        <!--         시각장애인들의 스크린리더기가 빠르게 결과값만 먼저 알려줄 수 있도록 tbody와 tfoot의 순서를 변경한다. ( 시각적으로는 변화없음. ) -->
+        <tfoot>
+            <tr>
+                <td>결과</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
