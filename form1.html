@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form 입력, 선택 컨트롤하는 양식</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend> <!-- 숨김대상 -->
+            <!-- 컨트롤 요소 배치 위치. block태그를 주로 넣는다.(검색내용 or 로그인 id,pw 등) -->
+        <ul>
+            <li><input type="text" name="user_name" placeholder="이름"></li>
+            <li><input type="text" name="user_id" placeholder="아이디"></li>
+            <li><input type="password" name="user_pw" placeholder="비밀번호"></li>
+            <li>성별 :
+                <label for="male">남</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="female">여</label>
+                <input type="radio" name="gender" value="female" id="female">
+            </li>
+            <li>
+                저장 정보 동의 :
+                <label for="agree_y">동의함</label>
+                <input type="radio" name="agree" value="agree_y" id="agree_y">
+                <label>동의안함
+                <input type="radio" name="agree" value="agree_n" id="agree_n">
+                </label>
+            </li>
+            <li>
+                관심사(2개 이상 선택하세요)
+                <label for="movie">영화</label>
+                <input type="checkbox" name="interest" value="movie" id="movie">
+                <label for="sports">운동</label>
+                <input type="checkbox" name="interest" value="sports" id="sports">
+                <label for="read">독서</label>
+                <input type="checkbox" name="interest" value="read" id="read">
+            </li>
+            <li>
+                첨부파일 <input type="file">
+            </li>
+        </ul>
+        <p>
+            <button type="submit">가입</button>
+            <button type="reset">가입취소</button>
+        </p>
+        </fieldset>
+    </form>
+        <!-- action 에는 url method에는 http정보를 -->
+        <!-- post : 정보를 노출하면 안되는 내용 -->
+        <!-- get : 정보를 노출해야하는 내용 (검색페이지) -->
+    <form action="#" method="get">
+        <fieldset>
+            <legend>로그인양식</legend>
+            <ul>
+                <li><input type="text" placeholder="이름"></li>
+                <li><input type="text" placeholder="아이디"></li>
+                <li><input type="password" placeholder="비밀번호"></li>
+                <li>성별 :
+                    <label for="m">남</label>
+                    <input type="radio" name="gender" value="m" id="m">
+                    <label for="fm">여</label>
+                    <input type="radio" name="gender" value="fm" id="fm">
+                </li>
+                <!-- 아래 남 여 누르면 위에가 움직임 -->
+                <li>저장 정보 동의 :
+                    <label>동의함
+                    <input type="radio" name="agree" value="yes" id="yes">
+                    </label>
+                    <label>동의안함
+                        <input type="radio" name="agree" value="no" id="no">
+                    </label>
+                </li>
+                <li>관심사(2개 이상 선택하세요)
+                    영화<input type="checkbox" name="hobby" value="movie" id="movie">
+                    운동<input type="checkbox" name="hobby" value="sports" id="sports">
+                    독서<input type="checkbox" name="hobby" value="read" id="sports">
+                </li>
+                <li>첨부파일
+                    <input type="file">
+                </li>
+                <li><button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>
+                
+            </legend>
+        </fieldset>
+    </form>
+    <form action="#" method="get">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </form>
+    <form action="#" method="get">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </form>
+    <form action="#" method="get">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </form>
+</body>
+</html>
