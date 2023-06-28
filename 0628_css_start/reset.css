@@ -1,0 +1,13 @@
+/* block태그만 사용. */
+html, body
+h1,h2,h3,h4,h5,h6,p,blockquote,address,
+span,strong,em,q,sub,sup,del,s,a,img,
+div,header,nav,aside,main,footer,article,figure,figcaption,section,video,
+table,thead,tbody,tfoot,tr,th,td,ol,ul,li,dl,dt,dd,
+form,fieldset,legend,input,select,option,button,label,textarea{
+    margin:0; padding: 0; line-height: 1.0; font-size: 16px; font-weight: normal; font-style:normal; text-align:left; text-decoration: none;
+}
+table, tr, th, td {border-collapse:collapse;}
+ul,ol,li {list-style: none;}
+a {color:#000;}
+input {outline:none; border:0;}

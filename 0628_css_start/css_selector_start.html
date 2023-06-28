@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 작성연습</title>
+    <!-- 외부스타일시트(css파일 별도분리) -->
+    <link href="./reset.css" rel="stylesheet">
+    <style>
+        .test_box #title1 {background-color: black;}
+        .test_box > h1 {background-color: pink;}
+        .test_box h1~div {background-color: palegreen;}
+        main aside ul{background-color: hotpink;}
+        #t  {background-color: blue;}
+        hr+h1 {background-color: black;}
+        .top {stroke: blue;}
+        em {background-color: red;}
+        #t tbody tr td, #t tfoot tr td em {background-color: plum;}
+        /* 선택자  {속성:값;}
+        block태그는 기본 너비 100% 인식.
+        inline태그는 내용만큼 너비인식한다.
+        우선순위 inline > id > class > tag
+        h1 {background-color:aqua;}
+        h2 {background-color: aquamarine;}
+        span {background-color: tomato;}
+        .test_box {background-color: pink;}
+        test_box앞에 .은 class를 나타내는 줄임 특수문자.
+        #title1 {background-color: violet;}
+        #은 id를 나타내는 줄임 문자
+        .test1 {background-color:blue;}
+        구분이 필요할 때 . 앞에 태그명을 입력하면 된다.
+         p.test1 {background-color:green}
+        .test_box > p {background-color:black;}
+        >(꺽새)가 들어가면 class안에 자식만 인식하고 >없이 띄어쓰기만 하면 자손인 p도 포함되어 인식한다.
+        header {background-color:yellow}
+        header h1 {background-color: hotpink;}
+        header form {background-color: gray;}
+        header form input {background-color:blueviolet;}
+        header a {background-color:brown}
+        .box .contents p {background-color: beige;}
+        .box .contents h2+p {background-color: hotpink;}
+        .box .contents h2~p {font-size:20px;}
+        .box a span,
+        .box .contents h2 {background-color:blue;} */
+    </style>
+<!--     <style>
+        /* reset */
+        *{
+            margin:0; /* 바깥쪽 여백 초기화 */
+            padding:0; /* 안쪽 여백 초기화 */
+            line-height: 1.0; /* 행간 초기화 */
+            list-style:none; /* 목록태그 블록초기화 */
+            font-size:16px; /* 글자크기 초기화 */
+            font-weight:normal; /* 글자굵기 초기화 */
+            color:#000; /* 글자 색상 초기화 */
+            text-decoration:none; /* 글자 장식 초기화 (밑줄, 윗줄 등)*/
+            border-collapse:collapse; /* table의 이중선 초기화 -> table태그를 위한 선택자*/
+            font-style:normal; /* 기울기 초기화 */
+            border:0; /* 테두리 초기화 -> input 태그를 위한 선택자*/ 
+            outline: none; /* input 활성화 초기화 -> input 태그를 위한 선택자 */
+        }
+        /* design */
+        table,tr, th, td {border:1px solid black;}
+    </style> -->
+</head>
+<body>
+    <!-- inline style = HTML 내 작성 css -->
+    <h1 style="background-color: darkgray;">ver0</h1>
+    <div class="test_box">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h1 id="title1">h1-id</h1>
+        <h2 id="title2">h2-id</h2>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <blockquote cite="#">blockquote</blockquote>
+        <p><span>span</span></p>
+        <p><q cite="#">q</q></p>
+        <p><code class="test1">code</code></p>
+        <p class="test1"><sup>sup</sup><br><sub>sub</sub></p>
+        <div class="test1">test1-div</div>
+        <div class="test2">test2-div</div>
+        <div class="test3 test">test3-div</div>
+        <div class="test4 test">test4-div</div>
+        <div id="wrap"><p>wrap-div</p></div>
+    </div>
+    <hr>
+    <h1>ver1</h1>
+    <header>
+        <h1>logo</h1>
+        <form action="#">
+            <input type="text" name="id">
+            <input type="text" name="pw">
+        </form>
+        <a href="#">lnb</a>
+    </header>
+    <hr>
+    <h1>ver2</h1>
+    <div class="box">
+        <a href="#"><span>link</span></a>
+        <div class="contents">
+            <p>contents3</p>
+            <h2>title</h2>
+            <p>contents1</p>
+            <p>contents2</p>
+        </div>
+        <div class="img"><img src="#" alt=""></div>
+    </div>
+    <hr>
+    <h1>ver3</h1>
+    <main>
+        <aside>
+            <h2>title</h2>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li class="last"><a href="#">menu4</a></li>
+            </ul>
+        </aside>
+        <section>
+            <div class="top">
+                <h1>main_title</h1>
+                <p>path</p>
+            </div>
+            <article>
+                <p>contents</p>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <h1>ver4</h1>
+    <table id="t">
+        <thead>
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cell1</td>
+                <td><span>cell2</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total</th>
+                <td><em>cell</em></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
