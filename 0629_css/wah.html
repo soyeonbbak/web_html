@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 접근성 개요</title>
+    <base href="http://127.0.0.1:3000/wah.html">
+    <link href="/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        main {
+            width: 1000px;
+            border:1px solid #dcdcdc;
+            /* border => solid 기본 실선. 굵기 스타일 색상 순서로 입력한다. */
+            margin:0 auto;
+            /* 상하,좌우 묶음으로 사용. 레이아웃 가운데 배치 기본값 */
+        }
+        main #title_path {
+            border-bottom:1px solid #dcdcdc;
+            height:60px;
+            /* block의 기본너비값은 100% 이므로 부모와 동일한 크기를 가질 땐 별도의 width값을 안적어도 된다. */
+        }
+        main #title_path h1 {
+            /* font-family : '메인글꼴',메인글꼴에 문제가 생길 시 보이는 후보글꼴 */
+            font-size: 1.563rem; 
+            /* em이 아닌 rem 단위를 사용하는 이유 : 근접한 부모의 글자크기값이 아닌 body(웹문서)의 16px(1.0em)을 기본값으로 인식하기 위해서 */
+            /* px로 표기하면 반응형으로 사이트 만들 때 디바이스 종류별로 크기가 다 다르게 보일수도 있다. 
+            em 앞에 r을 붙이면 다른 글자크기를 기본 크기인 16px로 고정시킨다*/
+            font-weight:500; /* medium 500 */
+            /* 공백이 들어가면 '' 안에 입력해준다. 
+            사용자 컴퓨터 글꼴설치유무 상관없이 글꼴 보이게 하는 법
+            1. 구글 웹 서버에서 제공하는 웹주소로 된 글꼴을 가져온다.
+            2. 글꼴 설치 파일을 웹 제작폴더 내에 첨부해서 연결한다.
+            (용량이 커지고 번거로운게 단점)*/
+            padding:21px 0 21px 30px; /* 시계방향 */
+            /*             padding-left : 29px;
+            padding-top : 20px; */
+            float:left;
+        }
+        main #title_path .bread_crumbs {
+            font-size:16px;
+            float: right;
+            padding: 24px 30px 24px 0;
+            /* 같은 부모 안 형제태그 기준 좌우 배치 레이아웃 */
+        }
+        main #title_path .bread_crumbs img {}
+        main #title_path .bread_crumbs em {font-weight: 500;}
+        main #contents {
+            padding:70px 0 0 30px;
+            background-image: url(./img/bg.png) ;
+            background-repeat: no-repeat;
+            background-position: 550px 10%;
+        }
+        main #contents h2 {
+        }
+        main #contents h2 img {}
+        main #contents h2 span {
+            font-weight: 500;
+            color:#1E61A8;
+            padding: 0 0 0 34px;
+        }
+        main #contents p {
+            padding: 70px 16px 0 0;
+            line-height: 25px;
+        }
+        main #contents .first {
+            font-weight: 500; 
+            padding: 70px 0 0 54px;
+            font-size: 2.441em;
+            letter-spacing: -0.02em; /* -2% */
+            line-height: 56px;
+        }
+        main #contents .first em {
+            font-weight: 500;
+            color:#1F9B0F;
+            font-size: 2.441rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="title_path">
+            <h1>웹 접근성 개요</h1>
+            <p class="bread_crumbs">
+                <img src="./img/path_home_icon.png" alt=""> HOME &lt; 웹 접근성이란 &lt; <em>웹 접근성 개요</em>
+            </p>
+        </div>
+        <div id="contents">
+            <h2><img src="/img/title_icon.png" alt=""> <span>웹 접근성이란?</span></h2>
+            <p class="first"><em>장애에 구애 없이</em> 모든 사람들이<br>
+                손쉽게 정보를 공유할 수 있는<br>
+                인터넷 공간 만들기</p>
+            <p>월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란
+            '장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 공간'이라고 정의하였으며,
+            웹 콘텐츠를 제작할 때에는 장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야
+            한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성 부문을 강조함에도 불구하고,
+            웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.</p>
+            <p>하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는 것이 더욱 문제이다. 즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가 대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는 것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성 개념은 정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그 필요성 및 중요성이 더욱 증대되고 있다.</p>
+            <p>월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성 이니셔티브(WAI: Web Accessibility Initiative)링크와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉, 장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹 접근성이 있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의 개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.</p>
+        </div>
+    </main>
+</body>
+</html>
