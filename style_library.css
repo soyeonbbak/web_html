@@ -1,0 +1,114 @@
+header {}
+header #h_top_bg {background-color: gray;}
+header #h_top_bg .h_top {}
+header #h_top_bg .h_top .top_left {}
+header #h_top_bg .h_top .top_left .top_right {}
+header #h_top_bg .h_top .top_left .top_right a {}
+header #h_btm_bg {}
+header #h_btm_bg h1 {}
+header #h_btm_bg h1 a {}
+header #h_btm_bg nav {}
+header #h_btm_bg nav a {}
+header #h_btm_bg .all_nav {}
+header #h_btm_bg .all_nav .fa {}
+header #h_btm_bg .all_nav span {}
+/* 1행 광고배너영역 */
+#r1_bg {}
+#r1_bg .bnr_area {}
+#r1_bg .bnr_area p {}
+#r1_bg .bnr_area h1 {}
+#r1_bg .bnr_area #searchFrm {}
+#r1_bg .bnr_area #searchFrm fieldset {}
+#r1_bg .bnr_area #searchFrm fieldset legend {}
+#r1_bg .bnr_area #searchFrm fieldset input {}
+#r1_bg .bnr_area #searchFrm fieldset button {}
+/* 2행 자주 사용하는 메뉴 / 도서기증~오시는 길 */
+#r2_bg {}
+#r2_bg .menu_area {}
+#r2_bg .menu_area a {}
+/* 3행 공지사항 + 팝업존 + 이달의행사*/
+#r3_bg {}
+#r3_bg .r3_area_wrap {}
+#r3_bg .r3_area_wrap .notice_wrap {}
+#r3_bg .r3_area_wrap .notice_wrap .top {}
+#r3_bg .r3_area_wrap .notice_wrap .top h1 {}
+#r3_bg .r3_area_wrap .notice_wrap .top .right {}
+#r3_bg .r3_area_wrap .notice_wrap .top .right .more {}
+#r3_bg .r3_area_wrap .notice_wrap .btm {}
+#r3_bg .r3_area_wrap .notice_wrap .btm li {}
+#r3_bg .r3_area_wrap .notice_wrap .btm li a {}
+#r3_bg .r3_area_wrap .notice_wrap .btm li span {}
+/* e:notice */
+#r3_bg .r3_area_wrap .popup_wrap {}
+#r3_bg .r3_area_wrap .popup_wrap .top {}
+#r3_bg .r3_area_wrap .popup_wrap .top h1 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right #bnr1 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right #bnr2 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right #bnr3 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right #bnr4 {}
+#r3_bg .r3_area_wrap .popup_wrap .top .right #pause {}
+#r3_bg .r3_area_wrap .btm {}
+#r3_bg .r3_area_wrap .btm .popup1 {}
+#r3_bg .r3_area_wrap .btm .popup1 img {}
+#r3_bg .r3_area_wrap .btm .popup2 {}
+#r3_bg .r3_area_wrap .btm .popup3 {}
+#r3_bg .r3_area_wrap .btm .popup4 {}
+/* e:popup */
+#r3_bg .event_wrap {}
+#r3_bg .event_wrap .top {}
+#r3_bg .event_wrap .top h1 {}
+#r3_bg .event_wrap .top .right {}
+#r3_bg .event_wrap .top .right .more {}
+#r3_bg .event_wrap .btm {}
+#r3_bg .event_wrap .btm .title {}
+#r3_bg .event_wrap .btm .title h2 {}
+#r3_bg .event_wrap .btm .title h2 .fa {}
+#r3_bg .event_wrap .btm .title h2 span {}
+#r3_bg .event_wrap .btm .event_date {}
+#r3_bg .event_wrap .btm .event_date thead {}
+#r3_bg .event_wrap .btm .event_date thead tr {}
+#r3_bg .event_wrap .btm .event_date thead tr th {}
+#r3_bg .event_wrap .btm .event_date tbody {}
+#r3_bg .event_wrap .btm .event_date tbody tr {}
+#r3_bg .event_wrap .btm .event_date tbody tr th {}
+#r3_bg .event_wrap .btm .event_date tbody tr .event {}
+#r4_bg {}
+#r4_bg .r4_area_wrap {}
+#r4_bg .r4_area_wrap .bk_left {}
+#r4_bg .r4_area_wrap .bk_left .top {}
+#r4_bg .r4_area_wrap .bk_left .top h1 {}
+#r4_bg .r4_area_wrap .bk_left .top .right {}
+#r4_bg .r4_area_wrap .bk_left .top .right .more {}
+#r4_bg .r4_area_wrap .bk_left .book_contents {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a .book_img {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a .book_img span {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a .book_img span img {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a .book_name {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a .book_name span {}
+#r4_bg .r4_area_wrap .bk_left .book_contents a .book_name span img {}
+/* e:bk_left */
+#r4_bg .r4_area_wrap .bk_right {}
+#r4_bg .r4_area_wrap .bk_right .top {}
+#r4_bg .r4_area_wrap .bk_right .top h1 {}
+#r4_bg .r4_area_wrap .bk_right .top .more {}
+#r4_bg .r4_area_wrap .bk_right .book_contents {}
+#r4_bg .r4_area_wrap .bk_right .book_contents .left {}
+#r4_bg .r4_area_wrap .bk_right .book_contents .left img {}
+#r4_bg .r4_area_wrap .bk_right .book_contents .left p {}
+#r4_bg .r4_area_wrap .bk_right .book_contents .left p em {}
+#r4_bg .r4_area_wrap .bk_right .book_contents .left p span {}
+/* e:r4_bg */
+footer {}
+footer .f_top_bg {}
+footer .f_top_bg a {}
+footer .f_top_bg a img {}
+footer .f_btm {}
+footer .f_btm .btm_menu {}
+footer .f_btm .btm_menu a {}
+footer .f_btm p {}
+footer .f_btm .txt {}
+footer .f_btm .f_logo {}
+footer .f_btm .f_logo img {}
+
