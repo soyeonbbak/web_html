@@ -1,0 +1,61 @@
+/* 로컬글꼴 연결법 */
+/* ㄴ내 컴퓨터 안에있는 글꼴 */
+/* 웹글꼴 연결법 */
+/* 구글폰트접속->글꼴선택 -> link or import 글꼴주소가져오기 ->font-family글꼴연결 */
+dl {
+    font-size:2rem;/* 32px */
+    font-size:3rem;
+}/* font 종류로 적어놓으면 바탕체대신 세리프 중에서 대표 폰트가 자동으로 들어간다. */
+dl dt {
+    color:rgba(0,0,0,0.5);
+    background-color: rgba(0,255,255,0.5);
+    font-size:1.5rem;
+}
+dl dt em {
+    display: none;
+    background-color: #000; color: #fff;
+    font-family: 'Song Myung', serif;
+}
+dl dd {
+    background-color: yellow;
+}
+dl dd span {
+    display: block;
+    background-color: #000; color:#fff;
+}
+.f12 {
+    display: inline;
+    background-color:lightcoral; color:#fff;
+    word-spacing:0.05em;/* 5% */
+    letter-spacing : -0.02em;/* -2% */
+    font: size 1.25rem;
+    line-height:1.5; /* 1.0==100% */
+    /* font-size의 px값 기준 설정이 불편할 경우 상대값 기준으로 line-height를 처리한다.(100%기준) */
+    /* line-height: 20px; */
+    /* line-height는 px로 작성할 경우는 font-size의 px값 기준으로 값이 결정된다. */
+}
+.overflow {
+    background-color: rgba(0,0,0,0.2);
+    font-size: 1.25rem;
+    width:400px;
+    white-space:nowrap; /* 글자 줄바꿈x */
+    overflow: hidden;
+    text-overflow:ellipsis /* 끝에 잘린부분 ...으로 말줄임 표시 나타냄. */;
+    /* 글자 말줄임 css. 코드 따로 저장해서 필요할 때 쓰는걸 추천. */
+}
+#a {
+    background-color: lightblue;
+    width:700px; height: 700px;
+    margin0left:100px;
+    padding-top:50px;
+}
+#a #b {
+    background-color: lightsalmon;
+    width:50%; height: 50%;
+    font-size:5rem;
+    border:5px dotted coral;
+    padding: 50px 50px;
+    margin: 30px 350px 10px 30px;
+}
+/* 자식요소의 크기를 입력 시에는 반드시 부모 요소보다 작거나 같아야한다.
+- 높이는 가능한한 px로 사용한다. */
