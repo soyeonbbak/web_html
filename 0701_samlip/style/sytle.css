@@ -1,78 +1,202 @@
-header {}
-header h1 {
-    display: flex;
-    flex-direction: row;
+header {
+    width: 1200px; height: 92px;
+    margin:0 auto;/* 안쪽으로 들여넣기 */
+}
+header h1 {    float:left;
+    width:60px; height: 70px;
+    margin: 11px 0 0 50px;
 }
 header h1 a {}
-header h1 a img {}
-header nav {}
+header h1 a img {
+    width:100%;  /* 부모의 너비만큼 인식시켜줘야 크기가 바뀐다. 절대값때문에 부모만 너비 변경하면 자식은 따라오지않음. */
+    /*img태그는 인라인 요소지만 px크기를 절대값으로 가진다. 그래서 부모요소의 크기가 변경돼도 자동으로 따라오지 않기 때문에 width:100% 속성으로, 상대값으로 변경하여 부모의 px을 상대적으로 인식하게 하는 경우가 많다. */
+}
+header nav {
+    margin:39px 0 0 203.88px;
+    float: left;
+}
 header nav ul {}
-header nav ul li {}
-header nav ul li a {}
+header nav ul li {
+    float: left;
+}
+header nav ul li a {
+    padding-right:40px;
+    font-size: 1.2rem;
+}
+header nav ul li:last-child {margin-right: 0;}
+/* 활성화 페이지 기준 active class 선택자 작성위치 */
+header nav ul .active a { color:#36b4e5; }
 header .lnb {
     float:right;
+    margin:39px 50px 0 0 ;
 }
-header .lnb ul {}
-header .lnb ul li {}
-header .lnb ul li a {}
+header .lnb li {
+    float: left;
+    margin-right: 20px;
+    
+}
+header .lnb li:last-child { margin-right: 0;}
+/* 모든 li에 반복적으로 들어간 margin또는 padding 값에서 마지막 여백값만 빼는 방법 */
+header .lnb li a {
+    font-size: 1.2rem;
+}
+header .lnb li span {
+    width:1px; height:13px;
+    background-color: #aaa;
+    display: block; /* inline에서 block화로 진행함. */
+    margin-top:3px
+}
 /* header end */
 main {}
-main .bread_crumbs_bg {}
-main .bread_crumbs_bg .bread_crumbs {}
-main .bread_crumbs_bg .bread_crumbs a {}
-main .bread_crumbs_bg .bread_crumbs em {}
-main .contents1 {}
-main .contents1 h1 {}
-main .contents1 p {}
+main .bread_crumbs_bg {
+    background-color:#f1f1f1;;
+    border:1px solid #aaa;
+    border-left:0; border-right:0;
+}
+main .bread_crumbs_bg .bread_crumbs {
+    width: 1200px; height: 58px; 
+    margin:0 auto;
+    padding: 15px 40px 0 0;
+    text-align: right;
+    /* 정렬대상이 모두 인라인이고 한 방향 수평 정렬일 경우 정렬대상의 부모요소한테 text-align을 사용한다. */
+    
+}
+main .bread_crumbs_bg .bread_crumbs a {
+}
+main .bread_crumbs_bg .bread_crumbs em {
+    font-weight: 700;
+}
+main .contents1 {
+    width: 1200px; padding:70px 0;
+    margin:0 auto;
+}
+main .contents1 h1 {
+    text-align: center;
+    font-size: 2.074rem; font-weight: 600; letter-spacing: -0.02%;
+    margin:58px;
+}
+main .contents1 p {
+    text-align: center;
+    font-size: 1.2rem; letter-spacing: -0.02%;
+}
 main .contents2_bg {
     background-color: #f1f1f1;
+    text-align: center;
 }
-main .contents2_bg .contents2 {}
-main .contents2_bg .contents2 p
-main .contents3 {}
-main .contents3 h2  {}
-main .contents3 h2 span {
+main .contents2_bg .contents2 {
+    width:1200px; text-align: center;
+    padding: 60px 0; margin:0 auto;
+}
+main .contents2_bg .contents2 p {
+    font-size: 1.2rem;
+    line-height: 35px;
+    letter-spacing: -0.02%;
+}
+main .contents3 {
+    margin:0 auto; text-align: center;
+}
+main .contents3 h2  {
+    margin-top: 58px;
+    font-weight: 500; letter-spacing: -0.02%;
     color:#36b4e5;
 }
-main .contents3 p {}
+main .contents3 h2 span {
+    font-size: 2.074rem;
+}
+main .content3 p:nth-child(2) {margin-bottom:60px}
+main .contents3 p {
+    margin: 58px 0;
+    font-size: 1.728rem;
+}
 main .contents4_bg {
     background-color: #f1f1f1;
+    margin:0 auto; width:1200px
 }
-main .contents4_bg .goal h2 {}
-main .contents4_bg .goal ul {}
+main .contents4_bg .goal{
+    float: left; width: 1200px;
+}
+main .contents4_bg .goal h2 {
+    font-size:2.074em;
+    text-align: center;
+    padding:70px 0 50px 0;
+}
+main .contents4_bg .goal ul {
+    margin: 0 auto; padding-left:240px;
+    
+}
 main .contents4_bg .goal ul li {
     width:250px; height: 250px;
     border:1px solid #000; border-radius : 50%;
-    clear:both;
     font-size:2.074em; text-align: center; line-height: 7;
     background-color: #36b4e5;
+    float:left;
 }
-main .contents4_bg .strategy {background-color: aquamarine;}
-main .contents4_bg .strategy h2 {}
+main .contents4_bg .strategy {
+    background-color: aquamarine;
+}
+main .contents4_bg .strategy h2 {
+    font-size: 2.074em;
+    text-align: center; margin: 50px 0 70px 0;
+}
 main .contents4_bg .strategy ul {
-
+    float: left;
 }
 main .contents4_bg .strategy ul li {
-    text-align: center; line-height: 8; 
+    text-align: center; 
     width:180px; height: 180px;
+    background-color: #fff;
     border:1px solid #000;
-    background-color: #fff; border-radius : 50%;
+    border-radius : 50%; 
+    float: left;
     
 }
-main .contents4_bg .strategy ul li h3 {}
+main .contents4_bg .strategy ul li h3 {
+    font-size: 1.2rem;
+}
 main .contents4_bg .strategy ul li p {}
 /* main end */
-footer {background-color: antiquewhite;}
-footer .f_top{}
-footer .f_top .fnb {background-color: aqua;}
-footer .f_top .fnb li {}
-footer .f_top .fnb li a {}
-footer .f_top .f_site li {
-    background-color: yellow;
-    float:right;
+footer {
+    background-color: antiquewhite;
 }
-footer .f_top .f_site li a {}
-footer .f_btm { background-color: rebeccapurple;}
-footer .f_btm address {}
-footer .f_btm p {}
+footer .f_top{
+
+    width: 1200px;
+    margin:0 auto;
+}
+footer .f_top .fnb {margin-left:20px;
+    float: left; margin-top:16px;
+}
+footer .f_top .fnb li {
+    float: left; 
+    padding-right:30px; font-size:1.2rem;
+}
+footer .f_top .fnb li:last-child {padding-right: 0;}
+footer .f_top .fnb li a {}
+footer .f_top .f_site {
+    float: right;
+}
+footer .f_top .f_site li {
+    float:left;
+    border:1px solid #aaa;
+    margin: 6px 10px 0 0 ;
+}
+
+footer .f_top .f_site li:last-child{margin-right:0;}
+footer .f_top .f_site li a {
+    display: block;
+    padding:10px 20px;
+    font-size:1.2rem;
+}
+footer .f_btm { 
+    width:1200px; margin:0 auto;
+    padding: 70px 0;
+}
+footer .f_btm address {
+    /* float: left; */
+    margin-bottom: 50px;
+    font-size: 1.2rem; letter-spacing: -0.02%; line-height: 40px;
+}
+footer .f_btm p {
+    font-size: 1.2rem; letter-spacing: -0.02%; 
+}
 /* footer end */
