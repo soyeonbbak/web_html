@@ -1,0 +1,56 @@
+/* 1.선택자 작성 */
+/* 2.배경색 영역 구분 */
+/* 3.figma 비교 - css 작성 */
+header {
+    background-color: red;
+    width: 1200px; height:92px;
+    margin:0 auto;
+}
+header h1 {
+    background-color: orange;
+    width:60px; height: 70px;
+    margin: 11px 0 0 50px;
+    float: left;
+}
+header h1 a {}
+header h1 a img {
+    width:100%;
+
+}
+header nav {
+    background-color: yellow;
+    float: left;
+    margin:39px 0 0 203.88px;
+}
+header nav ul {
+    background-color:green ;
+}
+header nav ul li{
+    background-color: blue;
+    float:left;
+}
+header nav ul .active {}
+header nav ul .active a { color:#36b4e5;}
+header nav ul li a {
+    margin-right:40px; 
+    font-size:1.2rem;
+}
+header nav ul li:last-child a {margin:0;}
+header .lnb {
+    background-color: navy;
+    float: right;
+    margin:39px 50px 0 0;
+}
+header .lnb li{
+    background-color: purple;
+    float: left;
+    margin-right:20px;
+}
+header .lnb li:last-child{margin:0;}
+header .lnb li a{}
+header .lnb li span{
+    width:1px; height:13px;
+    display: block;
+    background-color: #000;
+    margin-top:3px;
+}
