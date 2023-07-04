@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* .gnb > li:nth-child(2) > a:nth-child(1) {background-color: lightblue;} */
+/* -------------------------- */
+    /* .gnb li:nth-child(2) .sub:nth-child(3) {background-color: red;} */
+    /* .gnb li .sub:nth-child(3) {background-color: red;} */
+    .gnb > li:nth-child(2) .snb:nth-child(3) {background-color: red;}
+    /* .gnb li:nth-child(2) .sub:nth-of-type(2) { background-color: blue; } */
+    .gnb > li:nth-child(2) .sub:nth-of-type(2) {background-color: blue;}
+    
+    /* nth-child는 부모기준 자식 순서. */
+    /* nth-of-type은 요소기준 */
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#">gnb1</a></li>
+        <li><a href="#">gnb2-1</a>
+            <a href="#">gnb2-2</a>
+            <ul class="sub"><!-- nth child / 빨간색배경-->
+                <li><a href="#">snb1</a></li>
+                <li><a href="#">snb2</a></li>
+            </ul>
+            <ul class="sub"> <!-- nth-of-type / 파란색배경 -->
+                <li><a href="#">snb1</a></li>
+                <li><a href="#">snb2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">gnb3</a></li>
+    </ul>
+</body>
+</html>

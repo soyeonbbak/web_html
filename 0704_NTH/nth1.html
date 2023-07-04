@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth1</title>
+    <style>
+        .test {background-color: gray;}
+        .test h1 { background-color: yellow;}
+        .test dl:nth-child(2){background-color: black;}
+        .test dl:nth-child(2) dt {background-color: green;}
+        .test dl:nth-child(2) dd {background-color: aqua;}
+        .test dl:nth-child(3){background-color: pink}
+        .test dl:nth-child(3) dt {background-color: skyblue;}
+        .test dl:nth-child(3) dd {background-color: lime;}
+    </style>
+</head>
+<body>
+    <section class="test">
+        <h1>제목</h1>
+        <dl>
+            <dt>정의형 제목1</dt>
+            <dd>정의형 내용1</dd>
+        </dl>
+        <dl>
+            <dt>정의형 제목2</dt>
+            <dd>정의형 내용2</dd>
+        </dl>
+    </section>
+</body>
+</html>
