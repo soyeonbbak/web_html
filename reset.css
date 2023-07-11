@@ -23,4 +23,7 @@ th {text-align:left;}
 ul,ol,li{list-style: none;}
 table, tr, th, td {border-collapse:collapse;}
 input {border:0; outline:none; }
-a {color:#000;}
+a {color:#000; text-decoration:none;}
+button {cursor:pointer; border:0;}
+fieldset {border:0}
+.skip {display:none;}
