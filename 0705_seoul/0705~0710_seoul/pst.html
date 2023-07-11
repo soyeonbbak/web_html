@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 연습</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <style>
+    /* 내부스타일 */
+        #all {
+            width:600px; height: 600px;
+            background-color: lightgray;
+            
+        }
+        #all .box {
+        width: 200px; height: 200px;
+        border: 2px solid black;
+        display: inline-block; margin-left: -6px;
+        
+        }
+        #all .a {
+            background-color: yellow;
+            
+        }
+        #all .b {
+            background-color: pink;
+            position: relative;
+            top:0; left:0;
+            /* relative 현재 위치 기준으로 움직인다. */
+        }
+        #all .c {
+            background-color: aqua;
+            
+        }
+        #all .d {
+            background-color: greenyellow;
+            position:absolute;
+            right:0; bottom:0;
+            /* absolute는 부모기준 상대위치 */
+            /* absolute가 적용되는 순간 현재 자신의 위피 해제한다.(부유=위로뜬다.) */
+            /* 형제 요소와 중첩 가능 (부유특징) */
+            /* absolute가 인식하는 부모기준은  */
+            /* 태그상의 부모가 아닌 position속성과 함께 있는 부모태그 또는 position속성 부모가 없을 경우 body를 인식한다. */
+        }
+        #wrap {
+            background-color: palegoldenrod;
+            width: 800px; height: 600px;
+            padding: 50px;
+            position: relative;
+        }
+        #wrap #wrap2 {
+            background-color: palegreen;
+            width: 600px ; height: 500px;
+            padding: 50px;
+            position: relative;
+        }
+        #wrap #wrap2 #wrap3 {
+            background-color: paleturquoise;
+            width: 400px ; height: 400px;
+            padding: 50px;
+            position: relative;
+        }
+        #wrap #wrap2 #wrap3 h1 {
+            border: 5px solid black;
+            width: 100px; height: 100px;
+            position:absolute; right: 0; top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+    </div>
+    <hr>
+    <div id="wrap">
+        <div id="wrap2">
+            <div id="wrap3">
+                <h1>제목</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

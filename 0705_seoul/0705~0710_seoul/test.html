@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* background: color(색상) image(사진) repeat(이미지반복,연속) attachment(고정) position(위치->x축과 y축 두개 입력) */
+        html,body{
+            background:aqua url(./images/news_img08.jpg) no-repeat fixed center bottom; height: 200%;
+        background-size: 700px;
+        }
+        #bg {
+            background-color: rgba(255,255,255,0.8);
+            position:relative;
+        }
+        #bg p {
+            background:yellow url(./images/news_img02.jpg) no-repeat;
+            height: 200px; width: 400px;
+            border: 5px solid #000;
+        }
+        #bg p:nth-child(2) {
+            position:relative; left: 100px;
+            border-color:red;
+            /* relative는 자기기준에서 움직일때 or 부모태그한테 기준을 줄 때 사용. */
+        }
+            #bg p:nth-child(3) {
+                background-repeat:repeat-x;
+                position: absolute; bottom:0; right: 0;
+                /* 형제가 relative를 가지고있어도 적용x 무조건 태그기준 부모가 relative를 갖고있어야한다. */
+            }
+            </style>
+</head>
+<body>
+    <div id="bg">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <h1>vs cod emmet</h1>
+    <p><em></em></p>
+    <p><span>1</span><span>2</span></p>
+    <p>동일 관계(형제)의 요소를 2개 이상 제작하고 싶을 땐 곱하기를 붙여서 Emmet기능을 실행한다.</p>
+    <ul> <!-- ul>li*4>a -->
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <div> <!-- div>p*5 -->
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <header> <!-- header>h+nav+p -->
+        <h1></h1>
+        <nav></nav>
+        <p></p>
+    </header>
+    <div class="test"> <!-- div.test>p>em -->
+        <p><em></em></p>
+    </div>
+    <dlv class="test"></dlv> <!-- div[class="test"] -->
+    <div id="box"><!--     div#box>section.contents>h1+p    -->
+        <section class="contents">
+            <h1></h1>
+            <p></p>
+        </section>
+    </div>
+    <img src="./images/call.jpg" alt="서울시청">
+    <video src="#"></video>
+    <form action="" method="get"></form>
+    <form action="" method="get"></form> <!-- form:get -->
+    <input type="text" name="" id=""> <!-- input:text -->
+    <button></button>
+    <button type="submit"></button> <!-- button:submit -->
+    <label for=""><input type="checkbox" name="" id=""></label> <!-- label>input:checkbox -->
+    <table> <!-- table>thead>tr>th*2 -->
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody> <!-- tbody>tr>td*2 -->
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- div.right>form:post#langfrm+div.weather  -->
+    <div class="right">
+        <form action="" method="post" id="langfrm"></form>
+        <fieldset> <!-- fieldset>legend+select+button -->
+            <legend></legend>
+            <select name="" id="">
+                <option value=""></option> <!-- option*2 -->
+                <option value=""></option>
+            </select>
+            <button></button>
+        </fieldset>
+        <div class="weather">
+            <p class="current_weather">27.5</p> <!-- p.current_weather+p.dust -->
+            <p class="dust">미세먼지</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="right">
+        <form action="" method="post"> <!-- div.right>form:post>fieldset>legend>select>option -->
+            <fieldset>
+                <legend>
+                    <select name="" id="">
+                        <option value=""></option>
+                    </select>
+                </legend>
+            </fieldset>
+        </form>
+        <p><span></span></p>
+        <p><span></span></p>
+    </div>
+    <div class="right"> <!-- div.right>select>option -->
+        <select name="" id="">
+            <option value=""></option>
+        </select>
+        <p><span></span></p><!-- p*2>span -->
+        <p><span></span></p>
+    </div>
+    
+</body>
+</html>
