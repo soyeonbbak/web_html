@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprite1</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="">
+    <style>
+        #sprite {}
+        #sprite span {
+            background:pink url(/image/icon_set1.png) no-repeat;
+            display: inline-block;
+            /* justify-content: space-between; */
+            width: 24px; height: 24px;
+            text-indent: -9999px;
+        }
+        #sprite .rain {
+            background-position: -24px 0;
+        }
+        #sprite .search {
+            background-position: 0 0;
+        }
+        #sprite2 {}
+        #sprite2 span {
+            background: lightcoral url(/image/kurly_img/kurly_set1.png); 
+            display: inline-block;
+            text-indent: -9999px; width: 36px; height: 36px;
+        }
+        #sprite2 .menu {
+            width: 16px; height: 14px;
+            background-position: 0 0;}
+        #sprite2 .cart{
+            background-position: 0px -14px;}
+        #sprite2 .like {
+            background-position: 0 -49px;}
+        #sprite2 .map {
+            background-position: 0 -86px;}
+        #sprite2 .search{
+            background-position: 0 -123px;}
+        #sprite2 .logo {
+            width: 82px; height: 42px;
+            background-position: 0 43px;}
+    </style>
+</head>
+<body>
+    <h1>sprite image</h1>
+    <p>sprite image는 규모가 있는 중견기업 및 대형 쇼핑몰등에서 많은 아이콘 이미지(100px이하)를 효율적으로 관리하기 위해서 제작하는 이미지이다.</p>
+    <p>sprite image는 img태그가 아닌 css에서 background-image로 연결해서 사용한다.</p>
+    <div id="sprite">
+        <span class="rain">날씨:비</span>
+        <span class="search">검색</span>
+    </div>
+    <div id="sprite2">
+        <span class="menu">메뉴</span>
+        <span class="cart">장바구니</span>
+        <span class="like">찜</span>
+        <span class="map">위치찾기</span>
+        <span class="search">검색</span>
+        <span class="logo">메인로고</span>
+    </div>
+    <ol>
+        <li>icon에 의미를 HTML태그에 작성한다.
+            ex) 검색, 바로가기, 홈, 위로, 아래로 등
+        </li>
+        <li>2. 위 html을 css 선택자로 만들어서 background-image로 sprite 이미지를 연결한다.</li>
+        <li>3. sprite 이미지의 개별위치, 크기를 체크해서 css로 입력한다.</li>
+        <li>4. (1)에서 작성한 의미있는 글자는 text-indent로 숨긴다.</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</body>
+</html>

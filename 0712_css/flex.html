@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <style>
+        .container {
+            border: 5px dashed #000;
+            /* flex 적용 전 주의사항! */
+            /* 1. 정렬 대상 요소가 누구인가? */
+            /* 2. (위) 요소의 부모에게 flex 적용 */
+            /* 3. 부모에 적용하는 flex 필수속성 :
+            display:flex; 
+            flex-flow:메인축방향 줄바꿈속성;
+            ㄴ 메인축방향 => 아이템이 정렬된 방향
+            아이템정렬된방향(가로) 
+            아이템정렬된방향(세로) 
+            줄바꿈 속성 => 정렬방향기준 1줄(nowrap)인지 2줄 이상(wrap)인지*/
+            display: flex; flex-flow: row wrap;
+            justify-content: center;
+            /* 메인축 정렬방법  justify-content*/
+            /* flex-flow:row 입력경우
+            justfy-content 가로방향 정렬 (좌-중앙-우)
+            좌 => flex-start (기본값) 
+            중앙 => center 
+            우 => flex-end 
+            -----------
+            flex-flow:column 입력경우
+            justfy-content 세로방향 정렬 (위-중앙-아래)
+            위 => flex-start (기본값) 
+            중앙 => center 
+            아래 => flex-end ( */
+        }
+        .container .item {
+            width: 200px; height: 200px;
+            background: lime;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

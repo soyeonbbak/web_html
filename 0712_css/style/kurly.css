@@ -1,0 +1,117 @@
+/* rgb(95 3 128) */
+/* all layout */
+.top_bg .top_bnr,header{
+    margin: 0 auto; width: 1050px;
+}
+/* header-sprite 그룹선택자 */
+header .mdl .logo h1,
+header .mdl #searchFrm fieldset button,
+header .mdl .lnb a,
+header .btm .btm_left .all_nav span{
+    background:url(/image/kurly_img/kurly_set1.png);
+    display: inline-block; width: 36px; height: 36px;
+    text-indent: -9999px;
+}
+/* top */
+.top_bg {
+    background-color:rgb(95 3 128);
+}
+.top_bg .top_bnr {
+    height: 42px; 
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center; /* 교차축 정렬 */
+    justify-content: center; /* 메인축 방향 */
+    position: relative;
+}
+.top_bg .top_bnr .event {
+    color: white;
+}
+.top_bg .top_bnr .event em {
+    font-weight: 600;
+}
+.top_bg .top_bnr .close {
+    position: absolute; right: 0;
+}
+.top_bg .top_bnr .close i {color: white;}
+/* middle */
+header {}
+header .user {
+    height: 35px;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .user a {
+    font-size:0.813em; margin: 0 5px;
+}
+header .user .join {
+    color: rgb(95 3 128);
+}
+header .user .login {}
+header .user  .customer_service {}
+header .mdl {
+    height: 63px;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header .mdl .logo {
+    display: flex; flex-flow: row nowrap;
+}
+header .mdl .logo h1{
+    width: 82px; height: 42px;
+    background-position: 0 43px;
+}
+header .mdl .logo a {
+    font-size: 1.25em; font-weight: 600; margin:0 10px;
+}
+header .mdl .logo .market {
+    color: rgb(95 3 128); 
+}
+header .mdl .logo .beauty {}
+header .mdl #searchFrm {
+    /* margin-left: -30%; */
+    border: 2px solid rgb(95 3 128);
+    border-radius: 5px; width: 350px;
+}
+header .mdl #searchFrm fieldset {
+    /* border: 1px solid rgb(95 3 128);
+    border-radius: 5px; padding:7px 10px; */
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header .mdl #searchFrm fieldset .skip {}
+header .mdl #searchFrm fieldset .search {}
+header .mdl #searchFrm fieldset button {background-position: 0 -123px;}
+header .mdl .lnb {}
+header .mdl .lnb a {}
+header .mdl .lnb .map {background-position: 0 -86px;}
+header .mdl .lnb .like {background-position: 0 -49px;}
+header .mdl .lnb .cart {background-position: 0px -14px;}
+header .btm {
+    height: 56px;    
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+header .btm .btm_left {}
+header .btm .btm_left .all_nav {font-weight: 600;}
+header .btm .btm_left .all_nav span {
+    width: 16px; height: 14px;
+    background-position: 0 0;
+}
+header .btm nav {}
+header .btm nav a {
+    font-weight: 600; margin: 50px;
+    
+}
+header .btm .delibery_info {
+    border: 1px solid #aaa;
+    border-radius: 30px; padding: 10px;
+}
+header .btm .delibery_info em {}
+header .btm .delibery_info span {}
+/* bottom */
