@@ -1,0 +1,77 @@
+/* group */
+body {background: url(/polar_bear_img/bg1.png) no-repeat;}
+.title1_bg .title1,.quiz_bh .quiz,.youtube_bg .youtube {
+    width: 1200px; margin: 0 auto;
+}
+/* title1 */
+.title1_bg {}
+.title1_bg .logo {}
+.title1_bg .logo img {
+    width: 50px; height: 50px;
+}
+.title1_bg .title1 {}
+.title1_bg .title1 a {}
+.title1_bg .title1 a img {}
+.title1_bg .title1 h1 {
+    font-size: 2.369em;
+}
+.title1_bg .title1 h1 span {
+    font-weight: 600; font-size: 100%
+}
+
+/* title2 */
+.quiz_bh {}
+.quiz_bh .quiz {}
+.quiz_bh .quiz .q_left {}
+.quiz_bh .quiz .q_left h1{}
+.quiz_bh .quiz .q_left p {}
+.quiz_bh .quiz .q_left form {}
+.quiz_bh .quiz .q_left form fieldset {}
+.quiz_bh .quiz .q_left form fieldset .skip {}
+.quiz_bh .quiz .q_left form fieldset .skip label {}
+.quiz_bh .quiz .q_left form fieldset .skip label input{}
+.quiz_bh .quiz .q_right {}
+.quiz_bh .quiz .q_right p {}
+.quiz_bh .quiz .q_right p img {}
+.quiz_bh .quiz .q_right p em {}
+.quiz_bh .quiz .q_right p span {}
+.quiz_bh .quiz .q_right p span {}
+.quiz_bh .quiz .q_right p:nth-child(1) {}
+.quiz_bh .quiz .q_right p:nth-child(2) {}
+.quiz_bh .quiz .q_right p:nth-child(3) {}
+/* title3 */
+.youtube_bg {}
+.youtube_bg .youtube {}
+.youtube_bg .youtube h1 {}
+.youtube_bg .youtube video {}
+.youtube_bg .youtube .sponsor{}
+.youtube_bg .youtube .sponsor img{}
+/* title4 */
+.per50_bg {}
+.per50_bg .per50 {}
+.per50_bg .per50 h1 {}
+.per50_bg .per50 h1 strong {}
+.per50_bg .per50 .cont_text {}
+.per50_bg .per50 img{}
+/* title5 */
+.disaster_bg {}
+.disaster_bg .disaster_top {}
+.disaster_bg .disaster_top h1 {}
+.disaster_bg .disaster_top p {}
+.disaster_bg .disaster_top .cont_text {}
+.disaster_bg .disaster_btm {}
+.disaster_bg .disaster_btm .dis_28{}
+.disaster_bg .disaster_btm .dis_28 h2{}
+.disaster_bg .disaster_btm .dis_28 h2 p{}
+.disaster_bg .disaster_btm span{}
+.disaster_bg .disaster_btm .dis_27cm {}
+.disaster_bg .disaster_btm .dis_27cm h2 {}
+.disaster_bg .disaster_btm .dis_27cm h2 p{}
+.disaster_bg .disaster_btm .dis_332 {}
+.disaster_bg .disaster_btm .dis_332 h2 {}
+.disaster_bg .disaster_btm .dis_332 h2 p {}
+/* title6 */
+/* title7 */
+/* title8 */
+/* title9 */
+/* title10 */

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>respon_6</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <style>
+        /* 1. Desktop 설계 */
+        main {
+            background: lightblue;
+            max-width: 1200px; min-width: 320px; 
+            margin: 0 auto;
+        }
+        main h1{
+            font-size: 1.875em;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main .products {
+            background: lightcoral;
+            display: flex; flex-flow: row wrap;
+            /* justify-content:space-between; */
+            /* align-items: flex-start; */
+        }
+        main .products a {
+            background: lightgoldenrodyellow;
+            /* width: 33%; */
+            display: flex; flex-flow: column nowrap;
+            margin-right:20px;
+        }
+        main .products a *{line-height: 30px; font-size:1.25em;}
+        main .products a:nth-child(4n) {margin-right:0;}
+        /* 5번째면 4n+1 */
+        main .products a img {}
+        main .products a em {}
+        main .products a .price {}
+        main .products a .desc {}
+        /* 데스크탑 최소 */
+        @media (min-width:745px) {
+            main .products a {
+                width:calc(25% - 60px / 4);
+                margin-right: 20px;}
+        }
+        /* 반응형웹 조건 */
+        @media (max-width:744px) {
+            main {width: calc(100% - 30px);}
+            main .products a,
+            main .products a:nth-child(4n) {
+                width:calc(33.33% - 40px / 3);
+                margin-right: 20px;}
+            /* a는 값을 넣으려고, 수열선택자는 위에서 입력한 값을 초기화겸 새로 값을 넣기위해 들어감. */
+            main .products a:nth-child(3n) {margin-right:0;}
+            /* main .products a:nth-child(4n) {margin-right: 20px;} */
+
+        }/* ipad mini 크기기준 744 조건종료 */
+        /* 반응형 처리에선 가능한 모든 레이아웃 고정->가변형으로 변경해야 한다. */
+        /*  1. 옆으로 정렬 item의 개수파악 후 ex) 3개라면 부모너비 100% / 3 = 33.33% 값을 계산한다.
+            2. item 사이 여백이 몇인지 px값을 체크한다. ex)20px
+            3. (2)번에서 확인한 여백이 총 몇 번 적용되는지 확인한다.
+            4. 지금까지 나온 값을 모두 종합해서 calc 계산법을 적용한다.
+            5. calc(크기% - 총여백값 / 아이템 한 줄 개수)
+            5. calc(33.33% - 40px / 3 )
+         */
+        
+        @media (max-width:430px) {
+            main {width:calc(100% - 30px);}
+            main .products a,
+            main .products a:nth-child(4n),
+            main .products a:nth-child(3n) {
+                width: calc(50% - 20px / 2);
+                margin-right: 20px;
+            }
+            main .products a:nth-child(2n) {margin-right: 0;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BEST</h1>
+        <div class="products">
+            <a href="#">
+                <img src="http://picsum.photos/id/1/285" alt="">
+                <em>상품명</em>
+                <span class="price">10,000원</span>
+                <span class="desc">설명</span>
+            
+            </a>
+            <a href="#">
+                <img src="http://picsum.photos/id/2/285" alt="">
+                <em>상품명</em>
+                <span class="price">10,000원</span>
+                <span class="desc">설명</span>
+            
+            </a>
+            <a href="#">
+                <img src="http://picsum.photos/id/3/285" alt="">
+                <em>상품명</em>
+                <span class="price">10,000원</span>
+                <span class="desc">설명</span>
+            
+            </a>
+            <a href="#">
+                <img src="http://picsum.photos/id/4/285" alt="">
+                <em>상품명</em>
+                <span class="price">10,000원</span>
+                <span class="desc">설명</span>
+            
+            </a>
+            <a href="#">
+                <img src="http://picsum.photos/id/5/285" alt="">
+                <em>상품명</em>
+                <span class="price">10,000원</span>
+                <span class="desc">설명</span>
+            
+            </a>
+            <a href="#">
+                <img src="http://picsum.photos/id/6/285" alt="">
+                <em>상품명</em>
+                <span class="price">10,000원</span>
+                <span class="desc">설명</span>
+            
+            </a>
+        </div>
+    </main>
+</body>
+</html>

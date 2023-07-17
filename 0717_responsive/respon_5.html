@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>respon_5</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <style>
+        /* min-width @media 모바일>태블릿>데스크탑개발 */
+        header, main, footer {
+            margin: 0 auto; padding: 20px;
+            max-width:1000px; min-width:320px;
+            text-align: center;
+        }
+        header {
+            background: palegoldenrod; height: 10vh;
+            
+        }
+        main {
+            background: palegreen; height: 80vh; border: 5px solid #000;
+        } 
+        main h1 {font-family: 3rem;}
+        main p {}
+        footer {height: 10vh;}
+        /* 모바일 스타일 설정 종료 */
+        /* @media 조건 시작 */
+        @media (min-width:481px) {
+            header {background: lightcoral;}
+            main {background: lightblue; border: none;}
+            main h1 {font-size: 1rem;}
+            footer {background: lightgreen;}
+        }
+        @media (min-width:769px) {
+            header {background: purple;}
+            main {background: powderblue;}
+            footer {background: peru;}
+        }
+        @media (min-width:1025px) {
+            main h1{font-size: 5rem;}
+            header {border: 5px solid #000;}
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <h1>제목</h1>
+        <p>내용</p>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
