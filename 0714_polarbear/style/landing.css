@@ -1,0 +1,254 @@
+/* group */
+.quiz_bg .quiz,.youtube_bg .youtube, .per50_bg .per50, .disaster_bg .disaster, .earth_bg .earth {
+    width: 1200px; margin: 0 auto;
+    padding: 100px 0;
+}
+/* title1 */
+.title1_bg {
+    background: url(/img/bg1.png) no-repeat fixed center 65%;
+    background-size: cover;
+    /* 사용자가 보는 해상도에 맞게 조절됨. */
+    position: relative;
+}
+.title1_bg::after{
+    content:''; 
+    background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7) 100%); display: block;
+    height: 800px; width: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 10;
+    /* absolute 적용 시 기본 block w100% inline처럼 변한다. */
+}
+/* 존재하지 않는 위치에 새로운 가상의 선택자를 만드는 것. */
+.title1_bg #snow {
+    z-index: 300; position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 800px;
+}
+.title1_bg .title1 {
+    background: rgba(255,255,0,0.5);
+    height: 800px; width: 1200px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+    color: #fff;
+    z-index: 100; position: relative; /* 위에서 적용한 백그라운드를 뒤로 넘길 때 사용 */
+}
+.title1_bg .title1 .logo {
+    align-self: flex-start;
+}
+.title1_bg .title1 .logo img {}
+.title1_bg .title1 h1 {
+    font-size: 3.157em; 
+    padding-top: 183px; line-height: 90px;
+    text-align: center;
+}
+.title1_bg .title1 h1 em {
+    font-weight: 600; font-size: 100%;
+    display: block;
+    
+}
+.title1_bg .title1 a {color: #fff;}
+.title1_bg .title1 .sponsor {
+    width:395px ; height: 85px;
+    text-align: center; 
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    border-radius: 50px;
+    padding:30px 70px;
+}
+.title1_bg .title1 .sponsor span {
+    font-size: 1.777em;
+}
+.title1_bg .title1 .sponsor img {}
+.title1_bg .title1 .sponsor_qa {
+    align-self: flex-end;
+    width:400px ; height: 60px;
+    background: #222; text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+}
+.title1_bg .title1 .sponsor_qa img {}
+.title1_bg .title1 .sponsor_qa span {font-size: 1.333em;}
+
+
+/* title2 */
+.quiz_bg {
+    background: url(/img/quiz_bg.png) no-repeat fixed center;
+    height: 615px; background-size:cover;
+}
+.quiz_bg .quiz>* {background: pink;}
+.quiz_bg .quiz {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #fff;
+}
+.quiz_bg .quiz .q_left {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 548px;
+    line-height: 30px;
+}
+.quiz_bg .quiz .q_left h2{
+    font-size: 3.157em; font-weight: 600;
+    display: flex; flex-flow: row nowrap;
+    align-self: center;
+}
+.quiz_bg .quiz .q_left p {
+    font-size: 1.333em;
+}
+.quiz_bg .quiz .q_left #quiz_frm {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li {
+    line-height: 30px;
+}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label input {
+    appearance: none; /* form input 요소 숨기기 */
+}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label span {
+    background: url(/img/check_box_outline_blank.png) no-repeat;
+    padding-left: 34px; font-size: 1.333em;
+}
+/* 상태선택자 (radio가 check될 경우 span의 이미지 변경하기 */
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label input:checked+span{
+    background: url(/img/check_box.png) no-repeat;
+}
+
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q1 {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q2 {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q3 {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q4 {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q1 span {}
+.quiz_bg.quiz .q_left #quiz_frm fieldset ul li label #q2 span {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q3 span {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset ul li label #q4 span {}
+.quiz_bg .quiz .q_left #quiz_frm fieldset #answer_btn {
+    font-size: 1.333em; color: #fff;
+    width: 545px; height: 60px; border-radius: 30px;
+    background-color: #222;
+}
+.quiz_bg .quiz .q_right {
+    width: 550px; height: 318px;
+    display: flex; flex-flow: column nowrap;
+    align-items: center; justify-content: space-between;
+}
+.quiz_bg .quiz .q_right h2 {
+    font-size: 1.777em;
+    padding:27px 155px; background-color: #f70;
+    gap: 10px;
+}
+.quiz_bg .quiz .q_right h2 img {}
+.quiz_bg .quiz .q_right h2 span{
+    
+}
+.quiz_bg .quiz .q_right .content {
+    height: 193px; background: #fff;
+}
+.quiz_bg .quiz .q_right .content em {
+    font-size: 5em; font-weight: 700;
+    color: #ff7700;
+}
+.quiz_bg .quiz .q_right .content span{
+    color: #000; font-size: 3.157em;
+    font-weight: 600;
+}
+.quiz_bg .quiz .q_right .updete{}
+/* title3 */
+.youtube_bg {
+    background: url(/img/video_bg.png) no-repeat fixed center;
+    background-size:cover ; padding:100px 0;
+}
+.youtube_bg .youtube {
+    display: flex; flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.youtube_bg .youtube h2 {
+    font-size: 3.157em; text-align: center;
+    line-height: 90px; font-weight: 600;
+}
+.youtube_bg .youtube iframe {
+    margin:50px 0; width: 800px; height: 500px;
+}
+.youtube_bg .youtube .sponsor{
+    color: #fff;
+    width:395px ; height: 85px;
+    text-align: center; 
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    border-radius: 50px;
+    padding:30px 70px;}
+.youtube_bg .youtube .sponsor span{font-size: 1.777em;}
+.youtube_bg .youtube .sponsor img{}
+/* title4 */
+.per50_bg {
+    background: url(/img/50_bg.png);
+    padding:100px 0;
+}
+.per50_bg .per50 {
+    color: #fff;
+    display: flex; flex-flow: column nowrap;
+    align-items: flex-start;
+    
+}
+.per50_bg .per50 h2 {
+    font-size: 3.157em;
+    line-height: 90px; font-weight: 600;
+}
+.per50_bg .per50 h2 strong {
+    padding:5px 3px; background-color: #aaa;
+    font-size: 1em; color: #000;
+}
+.per50_bg .per50 .cont_text {
+    padding: 50px 0 ;
+    line-height: 37px; font-size: 1.333em;
+}
+.per50_bg .per50 img{}
+    /* title5 */
+.disaster_bg {
+    background: #f1f1f1;
+}
+
+.disaster_bg .disaster {
+    display: flex; flex-flow: column nowrap;
+    align-items: center; padding: 100px 0;
+}
+.disaster_bg .disaster {}
+.disaster_bg .disaster h2 {
+    font-size: 3.157em; 
+}
+.disaster_bg .disaster .cont_text {
+    line-height: 38px; font-size: 1.333em;
+    text-align: center; padding: 80px 0;
+}
+.disaster_bg .disaster ul {
+    display: flex; flex-flow: row nowrap;
+    height: 500px;
+    align-items: center; 
+}
+.disaster_bg .disaster ul li {
+    width: calc( 33.33% - 40px / 3);
+    margin-right: 20px;
+}
+.disaster_bg .disaster ul li:last-child {margin-right: 0;}
+.disaster_bg .disaster ul li .top {
+    height: 300px; color: #fff;
+    text-align: center; background-size: cover;
+    background-position: center 50%;
+}
+.disaster_bg .disaster ul li:nth-child(1) .top {background-image: url(/img/28.png)}
+.disaster_bg .disaster ul li:nth-child(2) .top {background-image: url(/img/27.png)}
+.disaster_bg .disaster ul li:nth-child(3) .top {background-image: url(/img/28.png)}
+.disaster_bg .disaster ul li .top {}
+.disaster_bg .disaster ul li .top h3{
+    font-size: 3.157em; padding:30px 0 50px 0;
+}
+.disaster_bg .disaster ul li .top p{}
+.disaster_bg .disaster ul li .list_cont{
+    height: 200px; padding-top: 20px;
+}
+/* title6 */
+/* title7 */
+/* title8 */
+/* title9 */
+/* title10 */
